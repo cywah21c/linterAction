@@ -24,4 +24,7 @@ jobs:
 # Runs a set of commands using the runners shell
       - name: Run the linting service
         uses: github/super-linter@v3.17.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
 
